@@ -11,20 +11,181 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./owl-slider/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./owl-slider/assets/owl.theme.default.min.css">
+    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
     <title>Document</title>
 
 </head>
 <body>
+
+    <!-- form submission -->
+
+    <div class="container-fluid form-sub position-absolute py-4">
+        <div class="container ">
+            <div class="mx-auto bg-white p-1 form-submission">
+                <h3 class="text-white p-2 fw-bold back-yellow">COMPLETE RESERVATION<i class="fa-solid fa-xmark float-end me-3 p-0 close-sub-reserve"></i></h3>
+                <p class="p-4">
+                    <span class="color-gray h5 fw-bolder d-block">Upon completing this reservation enquiry, you will receive::</span>
+                    <span class="color-gray ">Your rental voucher to produce on arrival at the rental desk and a toll-free customer support number.</span>
+                </p>
+                <div class="d-flex py-4 px-2 border-bottom border-secondary">
+                    <div class="col-6">
+                        <h5 class="px-3  color-yellow">LOCATION & DATE</h5>
+                        <span class="px-3 py-2 color-gray d-block"><i class="fa-solid fa-calendar-days me-2"></i>Pick-up Time</span>
+                        <span id="pcikuptime"></span>
+                        <span class="px-3 py-2 color-gray d-block"><i class="fa-solid fa-calendar-days me-2"></i>Dropoff Time</span>
+                        <span id="dropofftime"></span>
+                        <span class="px-3 py-2 color-gray d-block"><i class="fa-solid fa-location-dot me-2"></i>Pick-up Location</span>
+                        <span id="pickuplocation"></span>
+                        <span class="px-3 py-2 color-gray d-block"><i class="fa-solid fa-location-dot me-2"></i>Dropoff Location</span>
+                        <span id="dropofflocation"></span>
+                    </div>
+                    <div class="col-5 set-img">
+                        <h5 class="color-yellow">CAR:SALAVAIA <sub>[vehical modal]</sub></h5>
+                        <img src="./img/vehicle1.jpg" alt="" class="w-100 show-vehicle" id="veh1">
+                        <img src="./img/vehicle2.jpg" alt="" class="w-100 show-vehicle" id="veh2">
+                        <img src="./img/vehicle3.jpg" alt="" class="w-100 show-vehicle" id="veh3">
+                        <img src="./img/vehicle1.jpg" alt="" class="w-100 show-vehicle" id="veh4">
+                        <img src="./img/vehicle3.jpg" alt="" class="w-100 show-vehicle" id="veh5">
+                        <img src="./img/vehicle2.jpg" alt="" class="w-100 show-vehicle" id="veh6">
+                        <img src="./img/vehicle1.jpg" alt="" class="w-100 show-vehicle" id="veh7">
+                        <img src="./img/vehicle3.jpg" alt="" class="w-100 show-vehicle" id="veh8">
+                        <img src="./img/vehicle2.jpg" alt="" class="w-100 show-vehicle" id="veh9">
+                        <img src="./img/vehicle1.jpg" alt="" class="w-100 show-vehicle" id="veh10">
+                    </div>
+                </div>
+                <div class="car-form-submission p-4 color-gray">
+                    <h5 class="color-yellow fw-bold">PERSONAL INFORMATION</h5>
+                    <div class="row ">
+                        <div class="col-6">
+                            <label for="" class="fw-bold">Firstname:</label>
+                            <input type="text" name="" id="" class="w-100 p-2 color-gray back-gray border-0 mb-3" placeholder="Enter your first name">
+                            <label for="" class="fw-bold">Phone Number:</label>
+                            <input type="text" name="" id="" class="w-100 p-2 color-gray back-gray border-0 mb-3" placeholder="Enter your phone number">
+                            <label for="" class="fw-bold">Email Address:</label>
+                            <input type="email" name="" id="" class="w-100 p-2 color-gray back-gray border-0 mb-3" placeholder="Enter your email address">
+                            <label for="" class="fw-bold">City</label>
+                            <input type="text" name="" id="" class="w-100 p-2 color-gray back-gray border-0" placeholder="Enter your city">
+                        </div>
+                        <div class="col-6">
+                            <label for="" class="fw-bold">Lastname:</label>
+                            <input type="text" name="" id="" class="w-100 p-2 color-gray back-gray border-0 mb-3" placeholder="Enter your last name">
+                            <label for="">Age:</label>
+                            <select name="" id="" class="d-block p-2 fs-5 color-gray border-1 border-secondary w-50 mb-3 bg-white">
+                                <option value="">18</option>
+                                <option value="">19</option>
+                                <option value="">20</option>
+                                <option value="">21</option>
+                                <option value="">22</option>
+                                <option value="">23</option>
+                                <option value="">24</option>
+                                <option value="">25</option>
+                                <option value="">26</option>
+                                <option value="">27</option>
+                                <option value="">28</option>
+                                <option value="">29</option>
+                                <option value="">30</option>
+                                <option value="">31</option>
+                                <option value="">32</option>
+                                <option value="">33</option>
+                                <option value="">34</option>
+                                <option value="">35</option>
+                                <option value="">36</option>
+                                <option value="">37</option>
+                                <option value="">38</option>
+                                <option value="">39</option>
+                                <option value="">40</option>
+                                <option value="">41</option>
+                                <option value="">42</option>
+                                <option value="">43</option>
+                                <option value="">44</option>
+                                <option value="">45</option>
+                                <option value="">46</option>
+                                <option value="">47</option>
+                                <option value="">48</option>
+                                <option value="">49</option>
+                                <option value="">50</option>
+                                <option value="">51</option>
+                                <option value="">52</option>
+                                <option value="">53</option>
+                                <option value="">54</option>
+                                <option value="">55</option>
+                                <option value="">56</option>
+                                <option value="">57</option>
+                                <option value="">58</option>
+                                <option value="">59</option>
+                                <option value="">60</option>
+                                <option value="">61</option>
+                                <option value="">62</option>
+                                <option value="">63</option>
+                                <option value="">64</option>
+                                <option value="">65</option>
+                                <option value="">66</option>
+                                <option value="">67</option>
+                                <option value="">68</option>
+                                <option value="">69</option>
+                                <option value="">70</option>
+                                <option value="">71</option>
+                                <option value="">72</option>
+                                <option value="">73</option>
+                                <option value="">74</option>
+                                <option value="">75</option>
+                                <option value="">76</option>
+                                <option value="">77</option>
+                                <option value="">78</option>
+                                <option value="">79</option>
+                                <option value="">80</option>
+                                <option value="">81</option>
+                                <option value="">82</option>
+                                <option value="">83</option>
+                                <option value="">84</option>
+                                <option value="">85</option>
+                                <option value="">86</option>
+                                <option value="">87</option>
+                                <option value="">88</option>
+                                <option value="">89</option>
+                                <option value="">90</option>
+                                <option value="">91</option>
+                                <option value="">92</option>
+                                <option value="">93</option>
+                                <option value="">94</option>
+                                <option value="">95</option>
+                                <option value="">96</option>
+                                <option value="">97</option>
+                                <option value="">98</option>
+                                <option value="">99</option>
+                                <option value="">100</option>
+                            </select>
+                            <label for="">Email Address:</label>
+                            <input type="email" name="" id="" class="w-100 p-2 color-gray border-0 back-gray mb-3" placeholder="Enter your email address">
+                            <label for="">Zip code</label> 
+                            <input type="text" name="" id="" class="w-100 p-2 color-gray border-0 back-gray" placeholder="Enter your zip code">
+                        </div>
+                    </div>
+                    <label for="" class="mt-3">Address</label>
+                    <input type="text" name="" id="" class="w-100 p-2 color-gray border-0 back-gray mb-4" placeholder="Enter your address">
+                    <span class="ms-5  fs-5"><input type="checkbox" name="" id="" style="width: 20px;   height: 20px;">
+                        Please send me latest news and updates</span>
+                    <div class="p-5">
+                        <div class="float-end">
+                            <button class="px-4 py-1 fs-4 text-white fw-bold back-dark-gray">Cancel</button>
+                            <button class="px-5 py-1 fs-4 text-white fw-bold back-yellow">Reserve</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- scroll to top button -->
     <button class="position-fixed scroll-btn back-dark-gray border-0 text-white"><i class="fa-solid fa-angle-up"></i></button>
 
     <!-- langauge -->
     <div class="container-fluid language">
         <div class="row">
-            <div class="col-9">
+            <div class="col-lg-9 col-md-8">
                 <span class="fw-bold h5 float-end mt-2 text-secondary color-gray">Contact:(562) 498-4600</span>
             </div>
-            <div class="col-3 positon-relative">
+            <div class="col-lg-3 col-md-4 positon-relative">
                 <button class="px-3 py-2 back-yellow text-white border-0 fw-bold" id="lang-btn">Select your language <i class=" fa-solid fa-square-caret-down"></i></button>        
                 <div class="border border-1 mt-1 drop-menu position-absolute bg-white">
                     <div class="col-12 drop-down-item"><img src="./img/united-states-of-america.png" alt=""><span class="ms-2">English</span></div>
@@ -83,94 +244,96 @@
 
     <div class="container-fluid back-yellow p-5 reserve positon-relative">
         <div class="row d-flex justify-content-center align-item-center ">
-            <div class="col-4 bg-white p-4 ">
-                <div class="reserve-input">
-                    <select name="" id="" class="w-100 p-3 border-0 bg-white ">
-                        <option value="" class="px-5">Select Your Car Type</option>
-                        <option value="">a</option>
-                        <option value="">b</option>
-                        <option value="">c</option>
-                        <option value="">d</option>
-                        <option value="">e</option>
-                        <option value="">f</option>
-                        <option value="">g</option>
-                        <option value="">h</option>
-                        <option value="">i</option>
-                        <option value="">j</option>
-                    </select>                       
-                </div>
-                <div class="mt-3 reserve-input ">
-                    <label for="" class="px-3 py-2 "><i class="fa-solid fa-location-dot me-2"></i>Pick-up</label>
-                    <input type="text" name="" id="" class="d-inline-block border-0 color-yellow city " placeholder="Enter a city or Airport">
-                </div>
-                <p>Need a different drop-off location?</p>
-                <div class=" mt-4 d-flex">
-                    <div class="reserve-input  w-75">
-                        <label for="" class="px-3 py-2 w-50"><i class="fa-solid fa-calendar-days me-2"></i>Pick-up</label>
-                        <input type="date" name="" id="" class="px-2 py-2 border-0 color-yellow date">
+            <div class="col-lg-4 col-md-11 bg-white p-4 ">
+                <form action="">
+                    <div class="reserve-input">
+                        <select name="" id="car-select" class="w-100 p-3 border-0 bg-white fs-4 color-gray">
+                            <option value="" class="">Select Your Car Type</option>
+                            <option value="1">VW GOLF VII</option>
+                            <option value="2">Audi A1 S-LINE</option>
+                            <option value="3">Toyota Camry</option>
+                            <option value="4">BMW 320 ModernLine</option>
+                            <option value="5">Marceedes-Benz GLK</option>
+                            <option value="6">VW Passat CC</option>
+                            <option value="7">Marceedes-Benz GLK</option>
+                            <option value="8">VW Passat CC</option>
+                            <option value="9">Toyota Camry</option>
+                            <option value="10">Audi A1 S-LINE</option>
+                        </select>                       
                     </div>
-                    <select name="" id="" class="p-2 ms-1 border-1 gray-border bg-white color-yellow time">
-                        <option value="">12:00 AM</option>
-                        <option value="">01:00 AM</option>
-                        <option value="">02:00 AM</option>
-                        <option value="">03:00 AM</option>
-                        <option value="">04:00 AM</option>
-                        <option value="">05:00 AM</option>
-                        <option value="">06:00 AM</option>
-                        <option value="">07:00 AM</option>
-                        <option value="">08:00 AM</option>
-                        <option value="">09:00 AM</option>
-                        <option value="">10:00 AM</option>
-                        <option value="">11:00 AM</option>
-                        <option value="">12:00 PM</option>
-                        <option value="">01:00 PM</option>
-                        <option value="">02:00 PM</option>
-                        <option value="">03:00 PM</option>
-                        <option value="">04:00 PM</option>
-                        <option value="">05:00 PM</option>
-                        <option value="">06:00 PM</option>
-                        <option value="">07:00 PM</option>        
-                        <option value="">08:00 PM</option>
-                        <option value="">09:00 PM</option>
-                        <option value="">10:00 PM</option>
-                        <option value="">11:00 PM</option>                                
-                    </select>
-                </div>
-                <div class=" mt-3 d-flex ">
-                    <div class="reserve-input w-75">
-                        <label for="" class="px-3 py-2 w-50"><i class="fa-solid fa-calendar-days me-2"></i>Drop-off</label>
-                        <input type="date" name="" id="" class=" p-2 border-0 color-yellow date">
-                    </div>                       
-                    <select name="" id="" class="p-2 ms-1 border-1 gray-border bg-white color-yellow time">
-                        <option value="">12:00 AM</option>
-                        <option value="">01:00 AM</option>
-                        <option value="">02:00 AM</option>
-                        <option value="">03:00 AM</option>
-                        <option value="">04:00 AM</option>
-                        <option value="">05:00 AM</option>
-                        <option value="">06:00 AM</option>
-                        <option value="">07:00 AM</option>
-                        <option value="">08:00 AM</option>
-                        <option value="">09:00 AM</option>
-                        <option value="">10:00 AM</option>
-                        <option value="">11:00 AM</option>
-                        <option value="">12:00 PM</option>
-                        <option value="">01:00 PM</option>
-                        <option value="">02:00 PM</option>
-                        <option value="">03:00 PM</option>
-                        <option value="">04:00 PM</option>
-                        <option value="">05:00 PM</option>
-                        <option value="">06:00 PM</option>
-                        <option value="">07:00 PM</option>
-                        <option value="">08:00 PM</option>
-                        <option value="">09:00 PM</option>
-                        <option value="">10:00 PM</option>
-                        <option value="">11:00 PM</option>
-                    </select>                            
-                </div>
-                <button class="h2 fw-bold w-100 mt-5 p-2 border-0 back-yellow text-white">Continue Car Reservation</button>
+                    <div class="mt-3 reserve-input ">
+                        <label for="" class="px-3 py-2 "><i class="fa-solid fa-location-dot me-2"></i>Pick-up</label>
+                        <input type="text" name="" id="" class="d-inline-block border-0 color-yellow city " placeholder="Enter a city or Airport">
+                    </div>
+                    <p>Need a different drop-off location?</p>
+                    <div class=" mt-4 d-flex">
+                        <div class="reserve-input  w-75">
+                            <label for="" class="px-3 py-2 w-50"><i class="fa-solid fa-calendar-days me-2 "></i>Pick-up</label>
+                            <input type="date" name="" id="" class="px-2 py-2 border-0 color-yellow date">
+                        </div>
+                        <select name="" id="" class="p-2 ms-1 border-1 gray-border bg-white color-yellow time">
+                            <option value="">12:00 AM</option>
+                            <option value="">01:00 AM</option>
+                            <option value="">02:00 AM</option>
+                            <option value="">03:00 AM</option>
+                            <option value="">04:00 AM</option>
+                            <option value="">05:00 AM</option>
+                            <option value="">06:00 AM</option>
+                            <option value="">07:00 AM</option>
+                            <option value="">08:00 AM</option>
+                            <option value="">09:00 AM</option>
+                            <option value="">10:00 AM</option>
+                            <option value="">11:00 AM</option>
+                            <option value="">12:00 PM</option>
+                            <option value="">01:00 PM</option>
+                            <option value="">02:00 PM</option>
+                            <option value="">03:00 PM</option>
+                            <option value="">04:00 PM</option>
+                            <option value="">05:00 PM</option>
+                            <option value="">06:00 PM</option>
+                            <option value="">07:00 PM</option>        
+                            <option value="">08:00 PM</option>
+                            <option value="">09:00 PM</option>
+                            <option value="">10:00 PM</option>
+                            <option value="">11:00 PM</option>                                
+                        </select>
+                    </div>
+                    <div class=" mt-3 d-flex ">
+                        <div class="reserve-input w-75">
+                            <label for="" class="px-3 py-2 w-50"><i class="fa-solid fa-calendar-days me-2"></i>Drop-off</label>
+                            <input type="date" name="" id="" class=" p-2 border-0 color-yellow date">
+                        </div>                       
+                        <select name="" id="" class="p-2 ms-1 border-1 gray-border bg-white color-yellow time">
+                            <option value="">12:00 AM</option>
+                            <option value="">01:00 AM</option>
+                            <option value="">02:00 AM</option>
+                            <option value="">03:00 AM</option>
+                            <option value="">04:00 AM</option>
+                            <option value="">05:00 AM</option>
+                            <option value="">06:00 AM</option>
+                            <option value="">07:00 AM</option>
+                            <option value="">08:00 AM</option>
+                            <option value="">09:00 AM</option>
+                            <option value="">10:00 AM</option>
+                            <option value="">11:00 AM</option>
+                            <option value="">12:00 PM</option>
+                            <option value="">01:00 PM</option>
+                            <option value="">02:00 PM</option>
+                            <option value="">03:00 PM</option>
+                            <option value="">04:00 PM</option>
+                            <option value="">05:00 PM</option>
+                            <option value="">06:00 PM</option>
+                            <option value="">07:00 PM</option>
+                            <option value="">08:00 PM</option>
+                            <option value="">09:00 PM</option>
+                            <option value="">10:00 PM</option>
+                            <option value="">11:00 PM</option>
+                        </select>                            
+                    </div>
+                    <button class="h2 fw-bold w-100 mt-5 p-2 border-0 back-yellow text-white submit-reservation">Continue Car Reservation</button>
+                </form>
             </div>
-            <div class="col-6 g-5">
+            <div class="col-lg-6 col-md-11 g-5">
                 <div class="row ">
                     <div class="col-11 ms-5 owl-carousel owl-theme car-slider positon-relative">
                         <div class="item">
@@ -194,21 +357,21 @@
         <div class="row py-5">
             <h1 class="text-center mb-5 positon-relative color-gray fw-bold ">Customer Service</h1>
             <div class="row d-flex justify-content-center align-item-center gap-4 mt-4">
-                <div class="col-5 back-gray p-4">
-                    <span class="back-yellow   text-white">+</span><h3 class="d-inline-block ms-3 color-gray fw-bold ">Special rates on car booking</h3>
+                <div class="col-lg-5 col-md-5 back-gray p-4">
+                    <span class="back-yellow text-white">+</span><h3 class="d-inline-block ms-3 color-gray fw-bold ">Special rates on car booking</h3>
                     <p class="mt-3 lh-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aspernatur enim laboriosam, quam excepturi, voluptas dolores veritatis fuga, non unde repudiandae ab reprehenderit quaerat. Aspernatur reiciendis ipsum ad blanditiis architecto.</p>
                 </div>
-                <div class="col-5 back-gray p-4 ">
+                <div class="col-lg-5 col-md-5 back-gray p-4 ">
                     <span class="back-yellow   text-white">+</span><h3 class="d-inline-block ms-3 color-gray fw-bold">Mobile Phone Reservation</h3>
                     <p class="mt-3 lh-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aspernatur enim laboriosam, quam excepturi, voluptas dolores veritatis fuga, non unde repudiandae ab reprehenderit quaerat. Aspernatur reiciendis ipsum ad blanditiis architecto.</p>
                 </div>
             </div>
             <div class="row d-flex justify-content-center align-item-center mt-5 gap-4">
-                <div class="col-5 back-gray p-4">
+                <div class="col-lg-5 col-md-5 back-gray p-4">
                     <span class="back-yellow text-white">+</span><h3 class="d-inline-block ms-3 color-gray fw-bold">Unlimited Miles Car Rental</h3>
                     <p class="mt-3 lh-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aspernatur enim laboriosam, quam excepturi, voluptas dolores veritatis fuga, non unde repudiandae ab reprehenderit quaerat. Aspernatur reiciendis ipsum ad blanditiis architecto.</p>
                 </div>
-                <div class="col-5 back-gray p-4">
+                <div class="col-lg-5 col-md-5 back-gray p-4">
                     <span class="back-yellow  text-white">+</span><h3 class="d-inline-block ms-3 color-gray fw-bold">One Way Car Rentals</h3>
                     <p class="mt-3 lh-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aspernatur enim laboriosam, quam excepturi, voluptas dolores veritatis fuga, non unde repudiandae ab reprehenderit quaerat. Aspernatur reiciendis ipsum ad blanditiis architecto.</p>
                 </div>
@@ -218,17 +381,17 @@
 
     <div class="container-fluid back-yellow py-5 offers my-5">
         <div class="row d-flex justify-content-center align-item-center text-uppercase py-3">
-            <div class="col-4">
+            <div class="col-lg-4 col-md-11">
                 <h3 class="text-white">Sign up for amazing offers</h3>
                 <h6 class="color-gray">exclusive access for offers and promotions</h6>
             </div>
-            <div class="col-4 ms-4">
+            <div class="col-lg-4 col-md-11 ">
                 <input type="text" name="" id="" class="w-75 p-3 border-0 mt-1" placeholder="Enter Your Email Address">
                 <div class="email-btn d-inline-block">
                     <button class="p-2 border-2 border-secondary text-uppercase fw-bold color-gray">send</button>
                 </div>
             </div>
-            <div class="col-2 text-center mt-1">
+            <div class="col-lg-2 col-md-11 mt-1">
                 <a href=""><i class="fa-brands fa-twitter text-white fs-3 p-3"></i></a>
                 <a href=""><i class="fa-brands fa-google-plus-g text-white fs-3 p-3 mx-1"></i></a>
                 <a href=""><i class="fa-brands fa-facebook-f text-white fs-3 p-3"></i></a>
@@ -239,23 +402,23 @@
 
     <div class="container-fluid vehicles pt-5">
         <h1 class="color-gray " id="vehicles-heading"><span class="fw-bold">Vehicle Models -</span> Our rental fleet at a glance</h1>
-        <div class="row justify-content-center align-item-center  mt-5">
+        <div class="row justify-content-center align-item-center mt-5">
             <div class="cars-btn" id="veh">
-                <button class="p-3 back-gray color-gray border-0 fw-bold  positon-relative vehicle-btn" value="1" id="vehicle-btn1">hundai</button>
-                <button class="p-3 back-gray color-gray border-0 fw-bold positon-relative vehicle-btn" value="2" id="vehicle-btn2">suzuki</button>
-                <button class="p-3 back-gray color-gray border-0 fw-bold positon-relative vehicle-btn" value="3" id="vehicle-btn3">volwo</button>
-                <button class="p-3 back-gray color-gray border-0 fw-bold positon-relative vehicle-btn" value="4" id="vehicle-btn4">audi</button>
+                <button class="p-3 back-gray color-gray border-0 fw-bold positon-relative vehicle-btn" value="1" id="vehicle-btn1">VW GOLF VII</button>
+                <button class="p-3 back-gray color-gray border-0 fw-bold positon-relative vehicle-btn" value="2" id="vehicle-btn2">Audi A1 S-LINE</button>
+                <button class="p-3 back-gray color-gray border-0 fw-bold positon-relative vehicle-btn" value="3" id="vehicle-btn3">Toyota Camry</button>
+                <button class="p-3 back-gray color-gray border-0 fw-bold positon-relative vehicle-btn" value="4" id="vehicle-btn4">BMW 320 ModernLine</button>
                 <button class="p-3 back-gray color-gray border-0 fw-bold positon-relative vehicle-btn"
-                value="5" id="vehicle-btn5">jaguar</button>
+                value="5" id="vehicle-btn5">Merceedes-Benz GLK</button>
                 <button class="p-3 back-gray color-gray border-0 fw-bold positon-relative vehicle-btn"
-                value="6" id="vehicle-btn6">bugati</button>
-                <button class="p-3 back-gray color-gray border-0 fw-bold positon-relative vehicle-btn" value="7" id="vehicle-btn7">marceedes</button>
+                value="6" id="vehicle-btn6">VW Passat CC</button>
+                <button class="p-3 back-gray color-gray border-0 fw-bold positon-relative vehicle-btn" value="7" id="vehicle-btn7">Merceedes-Benz GLK</button>
                 <button class="p-3 back-gray color-gray border-0 fw-bold positon-relative vehicle-btn"
-                value="8" id="vehicle-btn8">BMW</button>
+                value="8" id="vehicle-btn8">Audi A1 S-LINE</button>
                 <button class="p-3 back-gray color-gray border-0 fw-bold positon-relative vehicle-btn"
-                value="9" id="vehicle-btn9">toyota</button>
+                value="9" id="vehicle-btn9">BMW 320 ModernLine</button>
                 <button class="p-3 back-gray color-gray border-0 fw-bold positon-relative vehicle-btn"
-                value="10" id="vehicle-btn10">tesla</button>
+                value="10" id="vehicle-btn10">VW GOLF VII</button>
                 <div class="click d-flex justify-content-center align-item-center ">
                     <button class=" border-0 back-dark-gray text-white" id="up-btn"><i class="fa-solid fa-chevron-up p-3"></i></button>
                     <button class="border-0 back-dark-gray text-white" id=down-btn><i class="fa-solid fa-chevron-down "></i></button>
@@ -928,7 +1091,7 @@
 
 
     <div class="container-fluid review mt-5">
-        <p class="text-center h2 color-gray "><span>&#9733;</span><span>&#9733;</span><span class="h1">&#9733;</span><span>&#9733;</span><span>&#9733;</span></p>
+        <p class="text-center h2 color-gray"><span>&#9733;</span><span>&#9733;</span><span class="h1">&#9733;</span><span>&#9733;</span><span>&#9733;</span></p>
         <div class="owl-carousel owl-theme review-slider w-75 m-auto color-gray mt-4 text-center">
             <div class="item ">
                 <p class="fs-3">This was my first time renting from car|rental. And over all it was a wonderful experience I have no complaints. The service rep help me find the best rental to suit my needs. I also love the fact that you guys provide luxury rentals at a great price. I will definitely rent with this company again. </p>
@@ -973,7 +1136,7 @@
 
     <div class="container-fluid quality mt-5">
         <div class="row pt-5 d-flex justify-content-center align-item-center gap-4">
-            <div class="col-5">
+            <div class="col-lg-5 col-md-9">
                 <h1 class="fw-bold color-gray ">Quality Guaranteed</h1>
                 <h4 class="color-gray fs-4 mt-4">Here is an example with one single photo displayed on the right</h4>
                 <p class="color-gray fs-5 my-4">Here is some dummy text. Hover over me! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, vero voluptas delectus explicabo maxime ad qui incidunt! Saepe.</p>
@@ -982,7 +1145,7 @@
                     <button class="px-3 py-1 fs-4 border-0 back-dark-gray text-white fw-bold">Buy these theme</button>
                 </div>
             </div>
-            <div class="col-5">
+            <div class="col-lg-5 col-md-9">
                 <img src="./img/info-img.jpg" alt="" class="w-100">
             </div>
         </div>
@@ -990,10 +1153,10 @@
 
     <div class="container-fluid watch-tour mt-5">
         <div class="row pt-5 d-flex justify-content-center align-item-center gap-4">
-            <div class="col-5">
+            <div class="col-lg-5 col-md-9">
                 <iframe class="w-100 h-100" src="https://www.youtube.com/embed/9_5pjZlWV3A" title="Car Rental Orlando" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <div class="col-5 color-gray">
+            <div class="col-lg-5 col-md-9 color-gray">
                 <h1 class="fw-bold ">Watch our info tour</h1>
                 <h4 class="fs-4 mt-4">You can also show youtube videos in this section!</h4>
                 <p class="fs-5 my-4">Here is some dummy text. Lorem ipsum dolor sit amet, This is an labeled text snippet!, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
@@ -1009,17 +1172,17 @@
                 <p class="fs-5 mt-4">To contribute to positive change and achieve our sustainability goals, we partner with many extraordinary organizations around the world. Their expertise enables more than we could alone, and their passion and talent inspire us. It is our pleasure to introduce you to a handful of the organizations whose accomplishments and commitments are representative of all the organizations we are fortunate to call our partners.</p>
             </div>
             <div class="row d-flex justify-content-center align-item-center mt-5">
-                <div class="col-3">
-                    <img src="./img/partner1.png" alt="">
+                <div class="col-lg-3 col-md-3">
+                    <img src="./img/partner1.png" alt="" class="w-100">
                 </div>
-                <div class="col-3">
-                    <img src="./img/partner2.png" alt="">
+                <div class="col-lg-3 col-md-3">
+                    <img src="./img/partner2.png" alt=""class="w-100">
                 </div>
-                <div class="col-3">
-                    <img src="./img/partner3.png" alt="">
+                <div class="col-lg-3 col-md-3">
+                    <img src="./img/partner3.png" alt="" class="w-100">
                 </div>
-                <div class="col-3">
-                    <img src="./img/partner4.png" alt="">
+                <div class="col-lg-3 col-md-3">
+                    <img src="./img/partner4.png" alt="" class="w-100">
                 </div>
             </div>
         </div>
@@ -1027,12 +1190,12 @@
 
     <div class="container-fluid Contact-us mt-5 py-5">
         <div class="row d-flex justify-content-center align-item-center ">
-            <div class="col-10 p-0">
+            <div class="col-lg-10 col-md-11 p-0">
                 <h1 class="color-gray fw-bold mb-5">Contact Us</h1>
             </div>
         </div>
         <div class="row d-flex justify-content-center align-item-center gap-3">
-            <div class="col-7">
+            <div class="col-lg-7 col-md-11">
                 <p class="color-gray fs-5 mb-4">You have any questions or need additional information?<br><span class="color-yellow fw-bold">Address:</span> <span class="fw-bold">Car|Rental / 3861 Sepulveda Blvd. / Culver City, CA 90230</span></p>
                 <form action="" class="contact-form color-gray">
                     <div class="d-flex align-item-center gap-3 ">
@@ -1045,14 +1208,14 @@
                     <button type="submit" class="fs-5 p-2 mt-3 fw-bold back-yellow color-gray text-white border-0">SUBMIT MESSAGE</button>
                 </form>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-md-11">
                 <div class="row">
-                    <div class="col p-0">
+                    <div class="col-lg-12 col-md-11 p-0">
                         <h5 class="color-gray ">Customer Center</h5>
                     </div>
                 </div>
                 <div class="row back-gray p-3 mb-4">
-                    <div class="col d-flex align-item-center card-contact positon-relative">
+                    <div class="col-lg-12 col-md-11 d-flex align-item-center card-contact positon-relative">
                         <img src="./img/contact-box-img1.jpg" alt="" class="img-contact">
                         <div class="color-gray  ms-4">
                             <h2>Sarah Connor</h2>
@@ -1061,13 +1224,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="row ">
-                    <div class="col p-0 mt-3">
+                <div class="row">
+                    <div class="col-lg-12 col-md-11 p-0 mt-3">
                         <h5 class="color-gray ">Change or Cancel Reservation</h5>
                     </div>
                 </div>
                 <div class="row back-gray p-3 mb-4 ">
-                    <div class="col d-flex align-item-center card-contact positon-relative">
+                    <div class="col-lg-12 col-md-11 d-flex align-item-center card-contact positon-relative">
                         <img src="./img/contact-box-img1.jpg" alt="" class="img-contact">
                         <div class="color-gray  ms-4">
                             <h2>Sarah Connor</h2>
@@ -1077,7 +1240,7 @@
                     </div>
                 </div>
                 <div class="row back-gray p-3 ">
-                    <div class="col d-flex align-item-center card-contact positon-relative">
+                    <div class="col-lg-12 col-md-11 d-flex align-item-center card-contact positon-relative">
                         <img src="./img/contact-box-img1.jpg" alt="" class="img-contact">
                         <div class="color-gray  ms-4">
                             <h2>Sarah Connor</h2>
@@ -1106,6 +1269,7 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./owl-slider/owl.carousel.min.js"></script>
     <script src="./car_rental.js"></script>

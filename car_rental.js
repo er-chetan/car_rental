@@ -28,6 +28,40 @@ $(document).ready(()=>{
     
 })
 
+// date //
+
+$(document).ready(()=>{
+    var currentDate = new Date();
+    var formattedDate = currentDate.toISOString().slice(0,10);
+    $('.date').attr('min', formattedDate);
+})
+
+// submit reservation //
+$(document).ready(()=>{
+    $('.submit-reservation').click((event)=>{
+        event.preventDefault();
+        var formdata=new FormData(this);
+        var selectElement = $("#car-Select");
+        var selectedOption = selectElement.options[selectElement.selectedIndex].text;
+        // var optionContent = selectedOption.text;
+        var optionvalue = selectedOption.val();
+        console.log(selectedOption)
+        $('.form-sub').show();
+    })
+
+
+
+
+})
+
+/// close submission form
+
+$(document).ready(()=>{
+    $('.close-sub-reserve').click(()=>{
+        $('.form-sub').toggle();
+    })
+})
+
 /// car slider ///
 $('.car-slider').owlCarousel({
     loop:true,
