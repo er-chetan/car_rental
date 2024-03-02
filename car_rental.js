@@ -37,28 +37,34 @@ $(document).ready(()=>{
 })
 
 // submit reservation //
+var pre;
 $(document).ready(()=>{
     $('.submit-reservation').click((event)=>{
+        let car_value=$("#car-select").val();
         event.preventDefault();
-        var formdata=new FormData(this);
-        var selectElement = $("#car-Select");
-        var selectedOption = selectElement.options[selectElement.selectedIndex].text;
-        // var optionContent = selectedOption.text;
-        var optionvalue = selectedOption.val();
-        console.log(selectedOption)
         $('.form-sub').show();
+        pre="#veh"+car_value;
+        $(pre).show();
+        let loc=$("#location").val();
+        $("#pickup-location").text(loc);
+        $("#dropoff-location").text(loc);
+        let pickup_time=$("#input-pickup-time option:selected").text();
+        let pickup_date=$("#input-pickup-date").val();
+        $("#pickup-date-time").text(pickup_date+" at "+pickup_time);
+        let dropoff_date=$("#input-dropoff-date").val();
+        let dropoff_time=$("#input-dropoff-time option:selected").text();
+        $("#dropoff-date-time").text(dropoff_date+" at "+dropoff_time);
+        let car_name=$("#car-select option:selected").text();
+        $("#display-model-name").text("Car : "+car_name);
     })
-
-
-
-
 })
 
 /// close submission form
 
 $(document).ready(()=>{
     $('.close-sub-reserve').click(()=>{
-        $('.form-sub').toggle();
+        $('.form-sub').hide();
+        $(pre).hide();
     })
 })
 

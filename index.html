@@ -30,17 +30,21 @@
                 <div class="d-flex py-4 px-2 border-bottom border-secondary">
                     <div class="col-6">
                         <h5 class="px-3  color-yellow">LOCATION & DATE</h5>
-                        <span class="px-3 py-2 color-gray d-block"><i class="fa-solid fa-calendar-days me-2"></i>Pick-up Time</span>
-                        <span id="pcikuptime"></span>
-                        <span class="px-3 py-2 color-gray d-block"><i class="fa-solid fa-calendar-days me-2"></i>Dropoff Time</span>
-                        <span id="dropofftime"></span>
-                        <span class="px-3 py-2 color-gray d-block"><i class="fa-solid fa-location-dot me-2"></i>Pick-up Location</span>
-                        <span id="pickuplocation"></span>
-                        <span class="px-3 py-2 color-gray d-block"><i class="fa-solid fa-location-dot me-2"></i>Dropoff Location</span>
-                        <span id="dropofflocation"></span>
+                        <!-- pickup date and time -->
+                        <span class="px-3 py-1 color-gray d-block fw-bold"><i class="fa-solid fa-calendar-days me-2"></i>Pick-up Time</span>
+                        <span id="pickup-date-time"  class="ms-5 color-gray"></span>
+                        <!-- drop off date and time -->
+                        <span class="px-3 py-1 color-gray d-block fw-bold"><i class="fa-solid fa-calendar-days me-2"></i>Dropoff Time</span>
+                        <span id="dropoff-date-time"  class="ms-5 color-gray"></span>
+                        <!-- pick up location -->
+                        <span class="px-3 py-1 color-gray d-block fw-bold"><i class="fa-solid fa-location-dot me-2"></i>Pick-up Location</span>
+                        <span id="pickup-location" class="ms-5 color-gray"></span>
+                        <!-- drop off location -->
+                        <span class="px-3 py-1 color-gray d-block fw-bold"><i class="fa-solid fa-location-dot me-2"></i>Dropoff Location</span>
+                        <span id="dropoff-location" class="ms-5 color-gray"></span>
                     </div>
-                    <div class="col-5 set-img">
-                        <h5 class="color-yellow">CAR:SALAVAIA <sub>[vehical modal]</sub></h5>
+                    <div class="col-5 set-img">   
+                        <p><h5 class="color-yellow fw-bold" id="display-model-name"></h5><sub class="color-yellow">[vehical modal]</sub></p>
                         <img src="./img/vehicle1.jpg" alt="" class="w-100 show-vehicle" id="veh1">
                         <img src="./img/vehicle2.jpg" alt="" class="w-100 show-vehicle" id="veh2">
                         <img src="./img/vehicle3.jpg" alt="" class="w-100 show-vehicle" id="veh3">
@@ -54,123 +58,125 @@
                     </div>
                 </div>
                 <div class="car-form-submission p-4 color-gray">
-                    <h5 class="color-yellow fw-bold">PERSONAL INFORMATION</h5>
-                    <div class="row ">
-                        <div class="col-6">
-                            <label for="" class="fw-bold">Firstname:</label>
-                            <input type="text" name="" id="" class="w-100 p-2 color-gray back-gray border-0 mb-3" placeholder="Enter your first name">
-                            <label for="" class="fw-bold">Phone Number:</label>
-                            <input type="text" name="" id="" class="w-100 p-2 color-gray back-gray border-0 mb-3" placeholder="Enter your phone number">
-                            <label for="" class="fw-bold">Email Address:</label>
-                            <input type="email" name="" id="" class="w-100 p-2 color-gray back-gray border-0 mb-3" placeholder="Enter your email address">
-                            <label for="" class="fw-bold">City</label>
-                            <input type="text" name="" id="" class="w-100 p-2 color-gray back-gray border-0" placeholder="Enter your city">
+                    <form action="">
+                        <h5 class="color-yellow fw-bold">PERSONAL INFORMATION</h5>
+                        <div class="row ">
+                            <div class="col-6">
+                                <label for="" class="fw-bold">Firstname:</label>
+                                <input type="text" name="" id="" class="w-100 p-2 color-gray back-gray border-0 mb-3" placeholder="Enter your first name">
+                                <label for="" class="fw-bold">Phone Number:</label>
+                                <input type="text" name="" id="" class="w-100 p-2 color-gray back-gray border-0 mb-3" placeholder="Enter your phone number">
+                                <label for="" class="fw-bold">Email Address:</label>
+                                <input type="email" name="" id="" class="w-100 p-2 color-gray back-gray border-0 mb-3" placeholder="Enter your email address">
+                                <label for="" class="fw-bold">City</label>
+                                <input type="text" name="" id="" class="w-100 p-2 color-gray back-gray border-0" placeholder="Enter your city">
+                            </div>
+                            <div class="col-6">
+                                <label for="" class="fw-bold">Lastname:</label>
+                                <input type="text" name="" id="" class="w-100 p-2 color-gray back-gray border-0 mb-3" placeholder="Enter your last name">
+                                <label for="">Age:</label>
+                                <select name="" id="" class="d-block p-2 fs-5 color-gray border-1 border-secondary w-50 mb-3 bg-white">
+                                    <option value="">18</option>
+                                    <option value="">19</option>
+                                    <option value="">20</option>
+                                    <option value="">21</option>
+                                    <option value="">22</option>
+                                    <option value="">23</option>
+                                    <option value="">24</option>
+                                    <option value="">25</option>
+                                    <option value="">26</option>
+                                    <option value="">27</option>
+                                    <option value="">28</option>
+                                    <option value="">29</option>
+                                    <option value="">30</option>
+                                    <option value="">31</option>
+                                    <option value="">32</option>
+                                    <option value="">33</option>
+                                    <option value="">34</option>
+                                    <option value="">35</option>
+                                    <option value="">36</option>
+                                    <option value="">37</option>
+                                    <option value="">38</option>
+                                    <option value="">39</option>
+                                    <option value="">40</option>
+                                    <option value="">41</option>
+                                    <option value="">42</option>
+                                    <option value="">43</option>
+                                    <option value="">44</option>
+                                    <option value="">45</option>
+                                    <option value="">46</option>
+                                    <option value="">47</option>
+                                    <option value="">48</option>
+                                    <option value="">49</option>
+                                    <option value="">50</option>
+                                    <option value="">51</option>
+                                    <option value="">52</option>
+                                    <option value="">53</option>
+                                    <option value="">54</option>
+                                    <option value="">55</option>
+                                    <option value="">56</option>
+                                    <option value="">57</option>
+                                    <option value="">58</option>
+                                    <option value="">59</option>
+                                    <option value="">60</option>
+                                    <option value="">61</option>
+                                    <option value="">62</option>
+                                    <option value="">63</option>
+                                    <option value="">64</option>
+                                    <option value="">65</option>
+                                    <option value="">66</option>
+                                    <option value="">67</option>
+                                    <option value="">68</option>
+                                    <option value="">69</option>
+                                    <option value="">70</option>
+                                    <option value="">71</option>
+                                    <option value="">72</option>
+                                    <option value="">73</option>
+                                    <option value="">74</option>
+                                    <option value="">75</option>
+                                    <option value="">76</option>
+                                    <option value="">77</option>
+                                    <option value="">78</option>
+                                    <option value="">79</option>
+                                    <option value="">80</option>
+                                    <option value="">81</option>
+                                    <option value="">82</option>
+                                    <option value="">83</option>
+                                    <option value="">84</option>
+                                    <option value="">85</option>
+                                    <option value="">86</option>
+                                    <option value="">87</option>
+                                    <option value="">88</option>
+                                    <option value="">89</option>
+                                    <option value="">90</option>
+                                    <option value="">91</option>
+                                    <option value="">92</option>
+                                    <option value="">93</option>
+                                    <option value="">94</option>
+                                    <option value="">95</option>
+                                    <option value="">96</option>
+                                    <option value="">97</option>
+                                    <option value="">98</option>
+                                    <option value="">99</option>
+                                    <option value="">100</option>
+                                </select>
+                                <label for="">Email Address:</label>
+                                <input type="email" name="" id="" class="w-100 p-2 color-gray border-0 back-gray mb-3" placeholder="Enter your email address">
+                                <label for="">Zip code</label> 
+                                <input type="text" name="" id="" class="w-100 p-2 color-gray border-0 back-gray" placeholder="Enter your zip code">
+                            </div>
                         </div>
-                        <div class="col-6">
-                            <label for="" class="fw-bold">Lastname:</label>
-                            <input type="text" name="" id="" class="w-100 p-2 color-gray back-gray border-0 mb-3" placeholder="Enter your last name">
-                            <label for="">Age:</label>
-                            <select name="" id="" class="d-block p-2 fs-5 color-gray border-1 border-secondary w-50 mb-3 bg-white">
-                                <option value="">18</option>
-                                <option value="">19</option>
-                                <option value="">20</option>
-                                <option value="">21</option>
-                                <option value="">22</option>
-                                <option value="">23</option>
-                                <option value="">24</option>
-                                <option value="">25</option>
-                                <option value="">26</option>
-                                <option value="">27</option>
-                                <option value="">28</option>
-                                <option value="">29</option>
-                                <option value="">30</option>
-                                <option value="">31</option>
-                                <option value="">32</option>
-                                <option value="">33</option>
-                                <option value="">34</option>
-                                <option value="">35</option>
-                                <option value="">36</option>
-                                <option value="">37</option>
-                                <option value="">38</option>
-                                <option value="">39</option>
-                                <option value="">40</option>
-                                <option value="">41</option>
-                                <option value="">42</option>
-                                <option value="">43</option>
-                                <option value="">44</option>
-                                <option value="">45</option>
-                                <option value="">46</option>
-                                <option value="">47</option>
-                                <option value="">48</option>
-                                <option value="">49</option>
-                                <option value="">50</option>
-                                <option value="">51</option>
-                                <option value="">52</option>
-                                <option value="">53</option>
-                                <option value="">54</option>
-                                <option value="">55</option>
-                                <option value="">56</option>
-                                <option value="">57</option>
-                                <option value="">58</option>
-                                <option value="">59</option>
-                                <option value="">60</option>
-                                <option value="">61</option>
-                                <option value="">62</option>
-                                <option value="">63</option>
-                                <option value="">64</option>
-                                <option value="">65</option>
-                                <option value="">66</option>
-                                <option value="">67</option>
-                                <option value="">68</option>
-                                <option value="">69</option>
-                                <option value="">70</option>
-                                <option value="">71</option>
-                                <option value="">72</option>
-                                <option value="">73</option>
-                                <option value="">74</option>
-                                <option value="">75</option>
-                                <option value="">76</option>
-                                <option value="">77</option>
-                                <option value="">78</option>
-                                <option value="">79</option>
-                                <option value="">80</option>
-                                <option value="">81</option>
-                                <option value="">82</option>
-                                <option value="">83</option>
-                                <option value="">84</option>
-                                <option value="">85</option>
-                                <option value="">86</option>
-                                <option value="">87</option>
-                                <option value="">88</option>
-                                <option value="">89</option>
-                                <option value="">90</option>
-                                <option value="">91</option>
-                                <option value="">92</option>
-                                <option value="">93</option>
-                                <option value="">94</option>
-                                <option value="">95</option>
-                                <option value="">96</option>
-                                <option value="">97</option>
-                                <option value="">98</option>
-                                <option value="">99</option>
-                                <option value="">100</option>
-                            </select>
-                            <label for="">Email Address:</label>
-                            <input type="email" name="" id="" class="w-100 p-2 color-gray border-0 back-gray mb-3" placeholder="Enter your email address">
-                            <label for="">Zip code</label> 
-                            <input type="text" name="" id="" class="w-100 p-2 color-gray border-0 back-gray" placeholder="Enter your zip code">
+                        <label for="" class="mt-3">Address</label>
+                        <input type="text" name="" id="" class="w-100 p-2 color-gray border-0 back-gray mb-4" placeholder="Enter your address">
+                        <span class="ms-5  fs-5"><input type="checkbox" name="" id="" style="width: 20px;   height: 20px;">
+                            Please send me latest news and updates</span>
+                        <div class="p-5">
+                            <div class="float-end">
+                                <button class="px-4 py-1 fs-4 text-white fw-bold back-dark-gray">Cancel</button>
+                                <button type="submit" class="px-5 py-1 fs-4 text-white fw-bold back-yellow">Reserve</button>
+                            </div>
                         </div>
-                    </div>
-                    <label for="" class="mt-3">Address</label>
-                    <input type="text" name="" id="" class="w-100 p-2 color-gray border-0 back-gray mb-4" placeholder="Enter your address">
-                    <span class="ms-5  fs-5"><input type="checkbox" name="" id="" style="width: 20px;   height: 20px;">
-                        Please send me latest news and updates</span>
-                    <div class="p-5">
-                        <div class="float-end">
-                            <button class="px-4 py-1 fs-4 text-white fw-bold back-dark-gray">Cancel</button>
-                            <button class="px-5 py-1 fs-4 text-white fw-bold back-yellow">Reserve</button>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -263,15 +269,16 @@
                     </div>
                     <div class="mt-3 reserve-input ">
                         <label for="" class="px-3 py-2 "><i class="fa-solid fa-location-dot me-2"></i>Pick-up</label>
-                        <input type="text" name="" id="" class="d-inline-block border-0 color-yellow city " placeholder="Enter a city or Airport">
+                        <input type="text" name="" id="location" class="d-inline-block border-0 color-yellow city " placeholder="Enter a city or Airport">
+                        
                     </div>
                     <p>Need a different drop-off location?</p>
                     <div class=" mt-4 d-flex">
                         <div class="reserve-input  w-75">
                             <label for="" class="px-3 py-2 w-50"><i class="fa-solid fa-calendar-days me-2 "></i>Pick-up</label>
-                            <input type="date" name="" id="" class="px-2 py-2 border-0 color-yellow date">
+                            <input type="date" name="" id="input-pickup-date" class="px-2 py-2 border-0 color-yellow date">
                         </div>
-                        <select name="" id="" class="p-2 ms-1 border-1 gray-border bg-white color-yellow time">
+                        <select name="" id="input-pickup-time" class="p-2 ms-1 border-1 gray-border bg-white color-yellow time">
                             <option value="">12:00 AM</option>
                             <option value="">01:00 AM</option>
                             <option value="">02:00 AM</option>
@@ -301,9 +308,9 @@
                     <div class=" mt-3 d-flex ">
                         <div class="reserve-input w-75">
                             <label for="" class="px-3 py-2 w-50"><i class="fa-solid fa-calendar-days me-2"></i>Drop-off</label>
-                            <input type="date" name="" id="" class=" p-2 border-0 color-yellow date">
+                            <input type="date" name="" id="input-dropoff-date" class=" p-2 border-0 color-yellow date">
                         </div>                       
-                        <select name="" id="" class="p-2 ms-1 border-1 gray-border bg-white color-yellow time">
+                        <select name="" id="input-dropoff-time" class="p-2 ms-1 border-1 gray-border bg-white color-yellow time">
                             <option value="">12:00 AM</option>
                             <option value="">01:00 AM</option>
                             <option value="">02:00 AM</option>
