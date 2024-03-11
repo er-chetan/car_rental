@@ -2,7 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: "Gowun+Batang";
+    font-family: "Roboto";
 }
 .color-yellow{
     color: #FFBF00;
@@ -107,7 +107,7 @@
 }
 .reserve-input input.city{
     padding: 10px;
-    width: 71%;
+    width: 71.5%;
 }
 .reserve-input input.date{
     width: 48%;
