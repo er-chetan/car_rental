@@ -5,19 +5,19 @@
     font-family: "Roboto";
 }
 .color-yellow{
-    color: #FFBF00;
+    color: #393E46;
 }
 .back-yellow{
-    background-color: #FFBF00;
+    background-color: #00ADB5;
 }
 .color-gray{
-    color: #716D6E;
+    color: #222831;
 }
 .back-dark-gray{
-    background-color: #716D6E;;
+    background-color: #222831;;
 }
 .back-gray{
-    background-color: #E3E2E2;
+    background-color: #EEEEEE;
 }
 .form-sub::before{
     /* display: none; */
@@ -78,7 +78,7 @@
     content: "";
     width: 3px !important;
     height:23% !important;
-    background-color: #FFBF00;
+    background-color: #00ADB5;
     position: absolute;
     transform: translate(-10px,6px);
 }
@@ -89,7 +89,7 @@
     content: "";
     width: 5px;
     height: 40%;
-    background-color: #FFBF00;
+    background-color: #00ADB5;
     position: absolute;
     transform: translate(-10px,6px);
 }
@@ -122,13 +122,13 @@
     bottom: -60px;
 }
 .car-slider .owl-nav .owl-prev{
-    color: #FEE18B !important;
+    color: #393E46 !important;
     font-weight: 900 !important;
     font-size: 80px !important;
     background: none !important;
 }
 .car-slider .owl-nav .owl-next{
-    color: #FEE18B !important;
+    color: #393E46 !important;
     font-weight: 900 !important;
     font-size: 80px !important;
     background: none !important;
@@ -138,7 +138,7 @@
 }
 .reserve::before{
     content: "";
-    background-color:#FFBF00;
+    background-color:#00ADB5;
     position: absolute;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     z-index: 10;
@@ -153,7 +153,7 @@
     content: "";
     width: 10%;
     height: 4px;
-    background-color: #FFBF00;
+    background-color: #00ADB5;
     position: absolute;
     z-index: -1;
     transform: translate(63%,60px);
@@ -204,7 +204,7 @@
 }
 .vehicles .cars-btn button.select-btn::after{
     content: "";
-    background-color:#FFE599;
+    background-color:#00ADB5;
     position: absolute;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     z-index: 10;
@@ -215,7 +215,7 @@
     rotate: 90deg;
 }
 .vehicle-btn-color{
-    background-color: #FFE599;
+    background-color: #00ADB5;
 }
 .cars-info .col-4 div.d-flex{
     border-bottom: 1px solid rgb(199, 196, 196);
@@ -225,7 +225,7 @@
 }
 .rental-location::before{
     content: "";
-    background-color: #FFBF00;
+    background-color: #00ADB5;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     width: 80px;
     height: 30px;
@@ -245,7 +245,7 @@
     content: "";
     width: 11%;
     height: 4px;
-    background-color: #FFBF00;
+    background-color: #00ADB5;
     position: absolute;
     left: 600px;
     transform: translateY(70px);
@@ -254,11 +254,11 @@
     height: 230px;
 }
 .img-contact{
-    border: 1px solid #FFBF00;
+    border: 1px solid #00ADB5;
 }
 .card-contact::before{
     content: "";
-    background-color: #FFBF00;
+    background-color: #00ADB5;
     width: 338px;
     height: 8px;
     position: absolute;
@@ -278,7 +278,7 @@
 }
 .card-contact.col-md-11::before{
     content: "";
-    background-color: #FFBF00;
+    background-color: #00ADB5;
     width: 91.8%;
     height: 8px;
     position: absolute;
