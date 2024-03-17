@@ -4,14 +4,14 @@
     box-sizing: border-box;
     font-family: "Roboto";
 }
-.color-yellow{
-    color: #393E46;
-}
-.back-yellow{
-    background-color: #00ADB5;
-}
-.color-gray{
+.color-black{
     color: #222831;
+}
+.color-blue{
+    color: #00ADB5;
+}
+.back-blue{
+    background-color: #00ADB5;
 }
 .back-dark-gray{
     background-color: #222831;;
