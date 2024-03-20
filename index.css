@@ -19,6 +19,18 @@
 .back-gray{
     background-color: #EEEEEE;
 }
+.border-left{
+    border-left: 6px solid #36A4CF;
+}
+.border-botm{
+    border-bottom: 8px solid #36A4CF;
+}
+.border-botm-gray{
+    border-bottom-color: gray;
+}
+.font-size{
+    font-size: 15px;
+}
 .form-sub::before{
     /* display: none; */
     content: "";
